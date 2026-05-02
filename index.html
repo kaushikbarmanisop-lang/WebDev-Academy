@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDev Academy | Zero to Hero</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Fira+Code&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="brand">WebDev Academy</div>
+            <nav>
+                <ul class="nav-links">
+                    <li class="nav-item active" data-target="welcome">
+                        <i data-lucide="map"></i> Roadmap
+                    </li>
+                    <li class="nav-item" data-target="html">
+                        <i data-lucide="code"></i> HTML Mastery
+                    </li>
+                    <li class="nav-item" data-target="css">
+                        <i data-lucide="palette"></i> CSS Architecture
+                    </li>
+                    <li class="nav-item" data-target="js">
+                        <i data-lucide="zap"></i> JavaScript Logic
+                    </li>
+                    <li class="nav-item" data-target="projects">
+                        <i data-lucide="trophy"></i> Hero Projects
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <p style="font-size: 0.8rem; color: #aaa;">&copy; 2026 Academy</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <!-- Roadmap Section -->
+            <div id="welcome" class="section active">
+                <header>
+                    <h1>The Hero's Journey</h1>
+                    <p>From opening your first tag to building complex web applications.</p>
+                </header>
+                <div class="grid-layout">
+                    <div class="card">
+                        <div class="step-num">01</div>
+                        <h3>The Basics</h3>
+                        <p>Learn how to structure content with HTML and style it with CSS basics.</p>
+                    </div>
+                    <div class="card">
+                        <div class="step-num">02</div>
+                        <h3>Layout & Design</h3>
+                        <p>Master Flexbox and Grid to build responsive, modern layouts for any device.</p>
+                    </div>
+                    <div class="card">
+                        <div class="step-num">03</div>
+                        <h3>Interactivity</h3>
+                        <p>Use JavaScript to handle user input, manipulate the DOM, and create dynamic experiences.</p>
+                    </div>
+                    <div class="card">
+                        <div class="step-num">04</div>
+                        <h3>The Hero Stage</h3>
+                        <p>Build real-world projects, work with APIs, and master modern frameworks.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HTML Section -->
+            <div id="html" class="section">
+                <header>
+                    <span class="tech-tag html-tag">Foundation</span>
+                    <h1>HTML Mastery</h1>
+                    <p>Structure is everything. Learn to write clean, semantic markup.</p>
+                </header>
+                
+                <div class="card">
+                    <h3>Semantic HTML</h3>
+                    <p>Stop using <code>&lt;div&gt;</code> for everything. Use semantic tags to help search engines and screen readers.</p>
+                    <pre><code><span class="tag">&lt;header&gt;</span>...<span class="tag">&lt;/header&gt;</span>
+<span class="tag">&lt;main&gt;</span>
+  <span class="tag">&lt;article&gt;</span>...<span class="tag">&lt;/article&gt;</span>
+  <span class="tag">&lt;aside&gt;</span>...<span class="tag">&lt;/aside&gt;</span>
+<span class="tag">&lt;/main&gt;</span>
+<span class="tag">&lt;footer&gt;</span>...<span class="tag">&lt;/footer&gt;</span></code></pre>
+                </div>
+
+                <div class="card">
+                    <h3>Forms & Inputs</h3>
+                    <p>The bridge between users and your data.</p>
+                    <pre><code><span class="tag">&lt;form&gt;</span>
+  <span class="tag">&lt;label</span> <span class="attr">for</span>=<span class="string">"name"</span><span class="tag">&gt;</span>Name:<span class="tag">&lt;/label&gt;</span>
+  <span class="tag">&lt;input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"name"</span> <span class="attr">required</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;button</span> <span class="attr">type</span>=<span class="string">"submit"</span><span class="tag">&gt;</span>Join<span class="tag">&lt;/button&gt;</span>
+<span class="tag">&lt;/form&gt;</span></code></pre>
+                </div>
+            </div>
+
+            <!-- CSS Section -->
+            <div id="css" class="section">
+                <header>
+                    <span class="tech-tag css-tag">Design</span>
+                    <h1>CSS Architecture</h1>
+                    <p>Mastering layout systems and modern styling techniques.</p>
+                </header>
+
+                <div class="card">
+                    <h3>The Flexbox Secret</h3>
+                    <p>Align anything, anywhere, with just a few lines of code.</p>
+                    <pre><code><span class="keyword">.container</span> {
+    <span class="attr">display</span>: <span class="string">flex</span>;
+    <span class="attr">justify-content</span>: <span class="string">space-between</span>;
+    <span class="attr">align-items</span>: <span class="string">center</span>;
+    <span class="attr">flex-wrap</span>: <span class="string">wrap</span>;
+}</code></pre>
+                </div>
+
+                <div class="card">
+                    <h3>CSS Grid: The Powerhouse</h3>
+                    <p>The most powerful layout system available in CSS.</p>
+                    <pre><code><span class="keyword">.grid</span> {
+    <span class="attr">display</span>: <span class="string">grid</span>;
+    <span class="attr">grid-template-columns</span>: <span class="string">repeat(auto-fit, minmax(200px, 1fr))</span>;
+    <span class="attr">gap</span>: <span class="string">20px</span>;
+}</code></pre>
+                </div>
+            </div>
+
+            <!-- JS Section -->
+            <div id="js" class="section">
+                <header>
+                    <span class="tech-tag js-tag">Intelligence</span>
+                    <h1>JavaScript Logic</h1>
+                    <p>Programming the behavior of your website.</p>
+                </header>
+
+                <div class="card">
+                    <h3>The Modern Essentials</h3>
+                    <p>Arrays, Objects, and the Power of ES6+.</p>
+                    <pre><code><span class="keyword">const</span> <span class="attr">users</span> = [<span class="string">'Alice'</span>, <span class="string">'Bob'</span>, <span class="string">'Charlie'</span>];
+
+<span class="comment">// Mapping through data</span>
+<span class="keyword">const</span> <span class="attr">shoutingUsers</span> = users.<span class="keyword">map</span>(user => user.<span class="keyword">toUpperCase</span>());
+
+<span class="comment">// Modern Fetch API</span>
+<span class="keyword">async function</span> <span class="keyword">getData</span>() {
+    <span class="keyword">const</span> <span class="attr">response</span> = <span class="keyword">await</span> <span class="keyword">fetch</span>(<span class="string">'https://api.example.com'</span>);
+    <span class="keyword">const</span> <span class="attr">data</span> = <span class="keyword">await</span> response.<span class="keyword">json</span>();
+}</code></pre>
+                </div>
+
+                <div class="card">
+                    <h3>Interactive Demo</h3>
+                    <div class="demo-box">
+                        <p id="demoText">Master the DOM through interaction.</p>
+                        <div class="button-group" style="margin-top: 1rem; display: flex; gap: 1rem; justify-content: center;">
+                            <button id="demoBtn" class="btn btn-js">Click Counter</button>
+                            <button id="resetBtn" class="btn" style="background: #eee;">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Projects Section -->
+            <div id="projects" class="section">
+                <header>
+                    <span class="tech-tag" style="background: #e8f5e9; color: #2e7d32;">Application</span>
+                    <h1>Hero Projects</h1>
+                    <p>Apply your skills to build real-world software.</p>
+                </header>
+                
+                <div class="project-cards">
+                    <div class="card project-item">
+                        <i data-lucide="layout"></i>
+                        <h4>Personal Portfolio</h4>
+                        <p>Build a stunning showcase of your work using Semantic HTML and CSS Grid.</p>
+                    </div>
+                    <div class="card project-item">
+                        <i data-lucide="check-circle"></i>
+                        <h4>Advanced Todo App</h4>
+                        <p>Manage state, local storage, and complex DOM manipulation with JS.</p>
+                    </div>
+                    <div class="card project-item">
+                        <i data-lucide="cloud-sun"></i>
+                        <h4>Weather Dashboard</h4>
+                        <p>Master Fetch API and asynchronous programming by fetching real-time data.</p>
+                    </div>
+                </div>
+
+                <div class="hero-callout">
+                    <h3>Ready for the next level?</h3>
+                    <p>The path to becoming a Senior Developer starts with consistent practice. Keep building!</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
